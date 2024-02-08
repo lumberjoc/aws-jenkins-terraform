@@ -14,6 +14,12 @@ sudo systemctl start jenkins
 # then install git
 sudo yum install git -y
 
+# then docker
+sudo amazon-linux-extras install docker
+sudo chkconfig docker on 
+sudo systemctl start docker
+sudo chmod 666 /var/run/docker.sock
+
 #then install terraform
 sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
