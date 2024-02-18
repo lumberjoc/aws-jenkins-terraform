@@ -18,7 +18,7 @@ sudo yum install git -y
 sudo amazon-linux-extras install docker
 sudo chkconfig docker on 
 sudo systemctl start docker
-sudo chmod 666 /var/run/docker.sock
+sudo chmod 600 /var/run/docker.sock
 
 #then install terraform
 sudo yum install -y yum-utils
